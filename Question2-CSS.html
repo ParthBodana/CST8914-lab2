@@ -3,28 +3,44 @@
 <head>
    <title>Question 2 - CSS</title>
    <style>
-    .mainsection a {
-      text-decoration: none;
-      color: #414040;
-      outline: none;
+    /* General styles for accessibility */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
     }
 
-    
-    </style>
+    /* Replace image text with actual text */
+    .mainsection h1 {
+      font-size: 2em;
+      color: #333;
+    }
+
+    /* Style links for better accessibility */
+    .mainsection a {
+      text-decoration: none;
+      color: #0066cc; /* High-contrast color */
+    }
+
+    .mainsection a:focus,
+    .mainsection a:hover {
+      outline: 2px solid #ff9900; /* Add focus outline */
+      background-color: #f0f8ff; /* Subtle background change */
+    }
+   </style>
 </head>
 <body>
 <div class="mainsection">
-<h1><img src="lab2/lab2-imageoftext.gif" alt="Shopping categories"></h1>
+  <!-- Replace image text with actual text -->
+  <h1>Shopping Categories</h1>
 
-<ul>
-  <li><a href="#">Animals</a></li>
-  <li><a href="#">Computers</a></li>
-  <li><a href="#">Diversity and inclusion</a></li>
-  <li><a href="#">Food</a></li>
-  <li><a href="#">Medicine</a></li>
-  <li><a href="#">Music</a></li>
-</ul>
+  <ul>
+    <li><a href="#">Animals</a></li>
+    <li><a href="#">Computers</a></li>
+    <li><a href="#">Diversity and Inclusion</a></li>
+    <li><a href="#">Food</a></li>
+    <li><a href="#">Medicine</a></li>
+    <li><a href="#">Music</a></li>
+  </ul>
 </div>    
-
 </body>
 </html>
