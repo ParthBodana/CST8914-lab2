@@ -4,10 +4,23 @@
 <head>
   <title>Question 3- CSS & HTML</title>
   <style>
+    /* General body styles */
+    body {
+      padding: 20px;
+      background-color: #2f2f2f;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Improve text contrast */
+    h1, h2, p {
+      color: #ffffff; /* High contrast white text */
+    }
+
+    /* Accessible button styles */
     .button {
-      background-color: #4CAF50;
+      background-color: #0066cc; /* High-contrast blue background */
       border: none;
-      color: white;
+      color: #ffffff; /* White text for contrast */
       padding: 15px 32px;
       text-align: center;
       text-decoration: none;
@@ -15,27 +28,24 @@
       font-size: 16px;
       margin: 4px 2px;
       cursor: pointer;
+      border-radius: 5px; /* Rounded corners */
     }
 
-    body {
-      padding: 20px;
-      background-color: #2f2f2f;
-    }
-
-    h1, h2, p {
-      color: black;
+    .button:focus,
+    .button:hover {
+      background-color: #004080; /* Darker blue on hover/focus */
+      outline: 3px solid #ffcc00; /* Yellow outline for focus */
     }
   </style>
 </head>
 
 <body>
-  
-  <h1>HTML made Easy</h1>
+  <h1>HTML Made Easy</h1>
 
   <p>What causes errors in HTML?</p>
 
-  <div class="button">Submit answers</div>
-
+  <!-- Corrected button -->
+  <button class="button" aria-label="Submit your answers">Submit Answers</button>
 </body>
 
 </html>
