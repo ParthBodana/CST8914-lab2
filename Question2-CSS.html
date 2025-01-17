@@ -1,76 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <title>Question 2 - CSS</title>
-   <style>
-   
+  <title>Question 3- CSS & HTML</title>
+  <style>
+    /* General body styles */
     body {
+      padding: 20px;
+      background-color: #2f2f2f;
       font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
     }
 
-    
-    .mainsection {
-      padding: 20px;
+    /* Improve text contrast */
+    h1, h2, p {
+      color: #ffffff; /* High contrast white text */
     }
 
-    
-    .mainsection h1 {
-      font-size: 2em;
-      color: white;
-      text-align: left;
-      background-color: #FF0000; 
-      background-image: url('https://img.freepik.com/free-vector/blank-brown-notepaper-design-vector_53876-173620.jpg?t=st=1737091234~exp=1737094834~hmac=f53b12c8370205b29dc8bd5d144ab0efe72e99006d974a222387981c34149cbf&w=360'); 
-      background-repeat: no-repeat;
-      background-position: left;
-      background-size: 400px 100px;
-      padding: 20px;
-     /* border-radius: 8px;*/ 
-      margin: 0 0 20px;
-    }
-
-    
-    .mainsection a {
+    /* Accessible button styles */
+    .button {
+      background-color: #0066cc; /* High-contrast blue background */
+      border: none;
+      color: #ffffff; /* White text for contrast */
+      padding: 15px 32px;
+      text-align: center;
       text-decoration: none;
-      color: #0066cc; 
-      font-weight: bold;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 5px; /* Rounded corners */
     }
 
-    
-    .mainsection a:focus,
-    .mainsection a:hover {
-      outline: 2px solid #ff9900;
-      background-color: #f0f8ff;
-      border-radius: 4px;
-      padding: 2px 4px;
+    .button:focus,
+    .button:hover {
+      background-color: #004080; /* Darker blue on hover/focus */
+      outline: 3px solid #ffcc00; /* Yellow outline for focus */
     }
-
-    
-    .mainsection ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    .mainsection ul li {
-      margin: 10px 0;
-    }
-   </style>
+  </style>
 </head>
-<body>
-<div class="mainsection">
-  
-  <h1>Shopping Categories</h1>
 
-  <ul>
-    <li><a href="#">Animals</a></li>
-    <li><a href="#">Computers</a></li>
-    <li><a href="#">Diversity and Inclusion</a></li>
-    <li><a href="#">Food</a></li>
-    <li><a href="#">Medicine</a></li>
-    <li><a href="#">Music</a></li>
-  </ul>
-</div>    
+<body>
+  <h1>HTML Made Easy</h1>
+
+  <p>What causes errors in HTML?</p>
+
+  <!-- Corrected button -->
+  <button class="button" aria-label="Submit your answers">Submit Answers</button>
 </body>
+
 </html>
