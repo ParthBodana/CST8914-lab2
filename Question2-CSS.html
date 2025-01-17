@@ -7,30 +7,58 @@
     body {
       font-family: Arial, sans-serif;
       line-height: 1.6;
+      margin: 0;
+      padding: 0;
     }
 
-    /* Replace image text with actual text */
+    /* Styling the main section */
+    .mainsection {
+      padding: 20px;
+    }
+
+    /* Replace image in h1 with background */
     .mainsection h1 {
       font-size: 2em;
-      color: #333;
+      color: white;
+      text-align: center;
+      background-image: url('lab2/lab2-imageoftext.gif');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 50px 0;
+      margin: 0 0 20px;
     }
 
-    /* Style links for better accessibility */
+    /* Style for links */
     .mainsection a {
       text-decoration: none;
       color: #0066cc; /* High-contrast color */
+      font-weight: bold;
     }
 
+    /* Focus and hover styles for links */
     .mainsection a:focus,
     .mainsection a:hover {
-      outline: 2px solid #ff9900; /* Add focus outline */
-      background-color: #f0f8ff; /* Subtle background change */
+      outline: 2px solid #ff9900;
+      background-color: #f0f8ff;
+      border-radius: 4px;
+      padding: 2px 4px;
+    }
+
+    /* Styling the list */
+    .mainsection ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .mainsection ul li {
+      margin: 10px 0;
     }
    </style>
 </head>
 <body>
 <div class="mainsection">
-  <!-- Replace image text with actual text -->
+  <!-- Replaced image with styled text and background -->
   <h1>Shopping Categories</h1>
 
   <ul>
